@@ -1,0 +1,101 @@
+[
+  {
+    "model": "sitebackend.productcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Celulares",
+      "description": "Dispositivos móviles"
+    }
+  },
+  {
+    "model": "sitebackend.product",
+    "pk": 1,
+    "fields": {
+      "name": "iPhone 11",
+      "price": "799.99",
+      "description": "El último celular de Apple",
+      "image": "https://example.com/iphone11.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "sitebackend.product",
+    "pk": 2,
+    "fields": {
+      "name": "Galaxy S20",
+      "price": "799.99",
+      "description": "El último celular de Samsung",
+      "image": "https://example.com/galaxys20.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "sitebackend.product",
+    "pk": 3,
+    "fields": {
+      "name": "Pixel 4",
+      "price": "799.99",
+      "description": "El último celular de Google",
+      "image": "https://example.com/pixel4.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "johndoe",
+      "password": "pbkdf2_sha256$120000$hJnKZ3TirE1T$f+cjbk1fLwJWsqG8Qv/c9XHjJ/PnWY4p4v1Yl+Vxagw="
+    }
+  },
+  {
+    "model": "sitebackend.shoppingcart",
+    "pk": 1,
+    "fields": {
+      "user": 1
+    }
+  },
+  {
+    "model": "sitebackend.order",
+    "pk": 1,
+    "fields": {
+      "shopping_cart": 1,
+      "shipping_address": "123 Main St",
+      "billing_address": "456 Main St",
+      "total_price": "1599.98"
+    }
+  },
+  {
+    "model": "sitebackend.payment",
+    "pk": 1,
+    "fields": {
+      "order": 1,
+      "payment_method": "tarjeta de crédito",
+      "payment_status": "aprobado"
+    }
+  },
+  {
+    "model": "sitebackend.shoppingcartproduct",
+    "pk": 1,
+    "fields": {
+      "shopping_cart": 1,
+      "product": 1
+    }
+  },
+  {
+    "model": "sitebackend.shoppingcartproduct",
+    "pk": 2,
+    "fields": {
+      "shopping_cart": 1,
+      "product": 2
+    }
+  },
+  {
+    "model": "sitebackend.shoppingcartproduct",
+    "pk": 3,
+    "fields": {
+      "shopping_cart": 1,
+      "product": 3
+    }
+  }
+]
